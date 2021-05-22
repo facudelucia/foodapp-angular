@@ -1,0 +1,8 @@
+<div class="search-content">
+    <div *ngIf="isLoading" class="spinner">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
+    <app-products [id]="item.id" [imagen]="item.image" [title]="item.title"
+        *ngFor="let item of items">
+    </app-products>
+</div>

@@ -1,0 +1,12 @@
+<div class="navbar-container">
+  <div class="navbar-content">
+    <a routerLink="/">
+      <i class='bx bx-home-alt bx-sm'></i>
+    </a>
+    <a to="/historial">
+      <div *ngIf="items.length > 0" class="items-quantity">{{items.length}}</div>
+      <i (click)="toggleCarrito()" class='bx bx-cart bx-sm'></i>
+
+    </a>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="top-products">
+  <div class="top-products-img">
+    <img [src]="imagen" (click)="productSelected()" />
+  </div>
+
+  <div class="top-products-text">
+    <div class="top-products-title pointer" (click)="productSelected()">{{title}}</div>
+    <div class="top-products-price">$ {{price}}</div>
+    <div class="top-products-rating">
+      <i *ngFor="let item of rating" class='star bx bxs-star'></i>
+    </div>
+  </div>
+
+
+  <i class="icon bx bx-plus-medical" (click)="addProductChart()"></i>
+</div>
