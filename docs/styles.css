@@ -1,0 +1,302 @@
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./src/styles.css ***!
+  \********************************************************************************************************************************************************************************************************/
+/* You can add global styles to this file, and also import other style files */
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #faf8f8;
+}
+.navbar-container .navbar-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-container .navbar-content a {
+    color: #ff833e;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+    font-weight: 400;
+}
+.home {
+    margin: 20px;
+    padding-bottom: 50px;
+}
+.home .scroll-menu-top .scroll-content-top {
+    display: flex;
+}
+.home .top-products {
+    background-color: #faf8f8;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    min-width: 150px;
+}
+.home .top-products .top-products-img img {
+    width: 100%;
+    cursor: pointer;
+}
+.home .top-products .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    background-color: #f52f41;
+    margin: 5px;
+    cursor: pointer;
+}
+.home .top-products .star{
+    color: rgb(155, 155, 16);
+}
+.home .top-products .top-products-text {
+    margin-top: 10px;
+}
+.home .top-products .top-products-text .top-products-price {
+    color: #ff833e;
+}
+.home .top-products .top-products-text .top-products-title {
+    color: #2f2f2f;
+}
+.home .scroll-menu {
+    margin-top: 10px;
+}
+.home .scroll-menu .scroll-content {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.home .scroll-menu .scroll-content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.home .scroll-menu .scroll-content::-webkit-scrollbar
+{
+    height: 8px;
+	background-color: #F5F5F5;
+}
+.home .scroll-menu .scroll-content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.home .scroll-menu .scroll-content .avatar {
+    background-color: #faf8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home .scroll-menu .scroll-content .avatar i {
+    color: #ff833e;
+    margin-bottom: 5px;
+}
+.header .combo-header {
+    background-color: #f52f41;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.header .combo-header .img {
+    width: 50%;
+}
+.header .combo-header .img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.header .combo-header .text {
+    width: 50%;
+}
+.header .combo-header .text h3 {
+    font-weight: 400;
+}
+.header .combo-header .text p {
+    font-weight: 300;
+}
+.header .input {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 15px;
+}
+.header .input input {
+    width: 100%;
+    background-color: #faf8f8;
+    border: 0px;
+    outline: none;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+.header .input .icon-input {
+    position: absolute;
+    margin-left: 10px;
+}
+.header .title {
+    font-weight: 350;
+}
+@media screen and (min-width:576px){
+    .home .scroll-menu .scroll-content .avatar {
+        padding: 40px;
+        margin: 5px;
+    }
+    .home{
+        padding-bottom: 70px;
+    }
+    .card-content .top-products{
+    width: 50%;
+   
+  }
+}
+.search-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.search-content .top-products{
+    margin: 10px;
+}
+@media screen and (min-width:576px){
+    .search-content .top-products{
+      flex: 0 1 calc(90% - 1rem);
+    }
+  }
+@media screen and (min-width:768px){
+    .search-content .top-products{
+      flex: 0 1 calc(50% - 1rem);
+    }
+  }
+@media screen and (min-width:992px){
+    .search-content .top-products{
+      flex: 0 1 calc(33% - 1rem);
+    }
+  }
+.card-content .top-products{
+    margin: 10px auto;
+  }
+.chart {
+	width: 100%;
+  height: 100%;
+	padding-top: 0px;
+  overflow:hidden;
+  transition: all .6s linear;
+  margin-top:300px;
+	position:fixed;
+  bottom:0;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 15px;
+	line-height: 18px;
+	color: #FFF;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.chart-content{
+  height:50%;
+  background-color: white;
+  color: black;
+  bottom:50px;
+  position:absolute;
+  width: 93vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.list-item-chart{
+    list-style: none;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+.button-chart{
+    padding:15px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.chart-content ul{
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+}
+.chart-content ul::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.chart-content ul::-webkit-scrollbar
+{
+    width: 8px;
+	background-color: #F5F5F5;
+}
+.chart-content ul::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.items-quantity{
+    position: relative;
+    width: 24px;
+    color: white;
+    border-radius: 13px;
+    background-color: #f52f41;
+    text-align: center;
+    top: -12px;
+    left: 39px;
+    line-height: 24px;
+}
+.button-card-back {
+    position: relative;
+    margin: 10px;
+    margin-left: 2px;
+    padding: 10px;
+    border: none;
+    color: white;
+    background: #f52f41;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.pointer{
+    cursor:pointer;
+}
+.spinner{
+   margin-top: 30%;
+}
+.spinner i{
+    font-size: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map*/

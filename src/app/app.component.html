@@ -1,0 +1,19 @@
+<div id="app">
+
+  <div class="home">
+    <div class="header">
+      <h2 class="title">PedidosApp</h2>
+      <form class="input" [formGroup]="miFormulario" (ngSubmit)="buscar()">
+        <input type="search" placeholder="Que quieres comer?" formControlName="busqueda" />
+        <div class="icon-input">
+          <i class="bx bx-search"></i>
+        </div>
+      </form>
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+  <app-chart [chartItems]=chartItems [total]="total" *ngIf="isOpen"></app-chart>
+  <app-navbar></app-navbar>
+
+</div>

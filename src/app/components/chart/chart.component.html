@@ -1,0 +1,15 @@
+<div class="chart">
+    <div class="chart-content">
+      <div>
+        <ul>
+          <li class="list-item-chart" *ngFor="let item of chartItems">{{item.title}}</li>
+          <li class="list-item-chart" *ngIf="chartItems.length === 0">Agrega un producto a tu carrito!</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Total: $ {{total}}</h4>
+        <button class="button-chart" (click)="payment()" [disabled]="chartItems.length === 0" type="button">Realizar pago</button>
+      </div>
+
+    </div>
+  </div>
